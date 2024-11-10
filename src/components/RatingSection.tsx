@@ -5,21 +5,21 @@ export default function RatingsSection() {
   const ratings = [
     {
       icon: <Star className="w-12 h-12 text-purple-400" />,
-      title: "4.5/5",
-      description: "App Store Rating",
+      title: "0%",
+      description: "Data loss",
       highlight: "User Favorite"
     },
     {
       icon: <Award className="w-12 h-12 text-pink-400" />,
       title: "Best of UI/UX",
-      description: "Credit Platform",
-      highlight: "Industry Award"
+      description: "Feedback platform",
+      highlight: "By teachers"
     },
     {
       icon: <TrendingUp className="w-12 h-12 text-purple-400" />,
-      title: "98%",
-      description: "Approval Rate",
-      highlight: "Instant Decision"
+      title: "Exiting offers",
+      description: "Rewarding",
+      highlight: "Positive towards growth"
     },
     {
       icon: <Shield className="w-12 h-12 text-pink-400" />,
@@ -44,7 +44,7 @@ export default function RatingsSection() {
               {" "}feedback platform
             </span>
           </h2>
-          <p className="mt-4 text-xl text-gray-400">Join millions of satisfied users who trust Perkify for their user interactions and feedback</p>
+          <p className="mt-4 text-xl text-gray-400">Power Up Productivity with Perks that Matter</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -69,8 +69,8 @@ export default function RatingsSection() {
 
         <div className="mt-24 grid md:grid-cols-3 gap-8 text-center">
           {[
-            { number: "5M+", label: "Active Users" },
-            { number: "₹500Cr+", label: "Credit Disbursed" },
+            { number: "100 Mbps", label: "Data transfer Speeds" },
+            { number: "50+", label: "rewiews till now" },
             { number: "99.9%", label: "Uptime" }
           ].map((stat, index) => (
             <div key={index} className="carnival-card">
