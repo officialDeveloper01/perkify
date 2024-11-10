@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-gray-800 bg-[#0A0A0A];
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .carnival-card {
+    @apply relative overflow-hidden rounded-3xl bg-gradient-to-b from-[#1A1A1A] to-[#0A0A0A] p-6 border border-gray-800;
+  }
+  
+  .carnival-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 opacity-0 transition-opacity duration-300;
+  }
+  
+  .carnival-card:hover::before {
+    @apply opacity-100;
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "builds": [
+      {
+        "src": "vite.config.ts",
+        "use": "@vercel/node"
+      }
+    ],
+    "env": {
+      "FIREBASE_API_KEY": "AIzaSyCVNmJog-IEeDlfq_wbA0u9G3NgiwPgt4s"
+    }
+  }
+  
